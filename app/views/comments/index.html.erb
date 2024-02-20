@@ -1,0 +1,8 @@
+<h1 class="mb-5">Comments</h1>
+
+<% @comments.each do |comment| %>
+  <%= render comment %>
+  <p><%= link_to "Show this comment", comment, class: "btn btn-sm btn-outline-dark" %></p>
+<% end %>
+
+<%= link_to "New comment", new_comment_path, class: "btn btn-sm btn-outline-dark" %>
