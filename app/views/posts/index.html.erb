@@ -2,7 +2,7 @@
 
 <% @posts.each do |post| %>
   <%= render post %>
-  <p><%= link_to "Show this post", post, class: "btn btn-sm btn-outline-dark" %></p>
+  <p><%= link_to "Show this post", post, class: "btn btn-sm btn-outline-dark mt-3" %></p>
 <% end %>
 
 <%= link_to "New post", new_post_path, class: "btn btn-sm btn-outline-dark" %>
